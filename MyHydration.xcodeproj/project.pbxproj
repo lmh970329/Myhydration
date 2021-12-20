@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C60C2A83273147E6002CC90F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C2A82273147E6002CC90F /* Notification.swift */; };
+		C60C2A8727315074002CC90F /* Hydration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C2A8627315074002CC90F /* Hydration.swift */; };
+		C6138CB62735168A003287C7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6138CB52735168A003287C7 /* DataManager.swift */; };
+		C65E300E273D026400AE7C22 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65E300D273D026400AE7C22 /* Test.swift */; };
+		C67CE7DF270474F8000AA9BD /* AlarmEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67CE7DE270474F8000AA9BD /* AlarmEditView.swift */; };
+		C6A4687E2754FA18003218AE /* MyHydrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2EFA2701D2BD00E4A073 /* MyHydrationApp.swift */; };
+		C6A4687F2754FAC7003218AE /* TrackerRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F3E2701DCB300E4A073 /* TrackerRingView.swift */; };
+		C6A4688127563DAE003218AE /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4688027563DAE003218AE /* Badge.swift */; };
+		C6AF2EFB2701D2BD00E4A073 /* MyHydrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2EFA2701D2BD00E4A073 /* MyHydrationApp.swift */; };
+		C6AF2EFD2701D2BD00E4A073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2EFC2701D2BD00E4A073 /* ContentView.swift */; };
+		C6AF2EFF2701D2BE00E4A073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AF2EFE2701D2BE00E4A073 /* Assets.xcassets */; };
+		C6AF2F022701D2BE00E4A073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AF2F012701D2BE00E4A073 /* Preview Assets.xcassets */; };
+		C6AF2F072701D2BE00E4A073 /* MyHydration WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C6AF2F062701D2BE00E4A073 /* MyHydration WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C6AF2F0C2701D2BE00E4A073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AF2F0B2701D2BE00E4A073 /* Assets.xcassets */; };
+		C6AF2F132701D2BE00E4A073 /* MyHydration WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C6AF2F122701D2BE00E4A073 /* MyHydration WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C6AF2F1A2701D2BE00E4A073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F192701D2BE00E4A073 /* ContentView.swift */; };
+		C6AF2F1C2701D2BE00E4A073 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F1B2701D2BE00E4A073 /* NotificationController.swift */; };
+		C6AF2F1E2701D2BE00E4A073 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F1D2701D2BE00E4A073 /* NotificationView.swift */; };
+		C6AF2F202701D2BE00E4A073 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F1F2701D2BE00E4A073 /* ComplicationController.swift */; };
+		C6AF2F222701D2BE00E4A073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AF2F212701D2BE00E4A073 /* Assets.xcassets */; };
+		C6AF2F252701D2BE00E4A073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AF2F242701D2BE00E4A073 /* Preview Assets.xcassets */; };
+		C6AF2F392701D5EF00E4A073 /* HydrationTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F382701D5EF00E4A073 /* HydrationTrackerView.swift */; };
+		C6AF2F3B2701D60D00E4A073 /* HydrationActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F3A2701D60D00E4A073 /* HydrationActivityView.swift */; };
+		C6AF2F3D2701D62600E4A073 /* UserInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F3C2701D62600E4A073 /* UserInformationView.swift */; };
+		C6AF2F3F2701DCB300E4A073 /* TrackerRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F3E2701DCB300E4A073 /* TrackerRingView.swift */; };
+		C6AF2F42270204B900E4A073 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F41270204B900E4A073 /* Colors.swift */; };
+		C6AF2F452702AB5F00E4A073 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F442702AB5F00E4A073 /* Alarm.swift */; };
+		C6AF2F482702D37B00E4A073 /* AlarmRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F472702D37B00E4A073 /* AlarmRow.swift */; };
+		C6CB6E9D27226D8F003CDBAF /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB6E9927226D0D003CDBAF /* Charts.framework */; platformFilter = ios; };
+		C6CB6E9E27226D8F003CDBAF /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6CB6E9927226D0D003CDBAF /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6CB6EA3272283E4003CDBAF /* ActivityGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6EA2272283E4003CDBAF /* ActivityGraphView.swift */; };
+		C6CB6EA627228FFA003CDBAF /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6EA527228FFA003CDBAF /* BLE.swift */; };
+		C6CB6EA827229F59003CDBAF /* ModuleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6EA727229F59003CDBAF /* ModuleListView.swift */; };
+		C6DA0169270D97810047DEBE /* HydrationEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA0168270D97810047DEBE /* HydrationEditView.swift */; };
+		C6DA016B270EED470047DEBE /* AlarmAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA016A270EED470047DEBE /* AlarmAddView.swift */; };
+		C6DA016D27103B140047DEBE /* DayRepeatSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA016C27103B140047DEBE /* DayRepeatSelectionView.swift */; };
+		C6DA016F27202AF00047DEBE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA016E27202AEE0047DEBE /* UserData.swift */; };
+		C6DA017327215B340047DEBE /* UserInformationEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA017227215B340047DEBE /* UserInformationEditView.swift */; };
+		C6E6B45C27463BB6003604CB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E6B45B27463BB6003604CB /* HealthKit.framework */; };
+		C6E6B45E274645AE003604CB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6E6B45D274645AE003604CB /* Launch Screen.storyboard */; };
+		C6E6B4622754F848003604CB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6138CB52735168A003287C7 /* DataManager.swift */; };
+		C6E6B4652754F848003604CB /* Hydration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C2A8627315074002CC90F /* Hydration.swift */; };
+		C6E6B4662754F848003604CB /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF2F442702AB5F00E4A073 /* Alarm.swift */; };
+		C6E6B4672754F848003604CB /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6CB6EA527228FFA003CDBAF /* BLE.swift */; };
+		C6E6B4682754F848003604CB /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA016E27202AEE0047DEBE /* UserData.swift */; };
+		C6E6B46A2754F848003604CB /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60C2A82273147E6002CC90F /* Notification.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6AF2F082701D2BE00E4A073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6AF2EEF2701D2BC00E4A073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6AF2F052701D2BE00E4A073;
+			remoteInfo = "MyHydration WatchKit App";
+		};
+		C6AF2F142701D2BE00E4A073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6AF2EEF2701D2BC00E4A073 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6AF2F112701D2BE00E4A073;
+			remoteInfo = "MyHydration WatchKit Extension";
+		};
+		C6CB6E9827226D0D003CDBAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CB6E9327226D0D003CDBAF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		C6CB6E9A27226D0D003CDBAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6CB6E9327226D0D003CDBAF /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6AF2F2D2701D2BE00E4A073 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C6AF2F132701D2BE00E4A073 /* MyHydration WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6AF2F312701D2BE00E4A073 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C6AF2F072701D2BE00E4A073 /* MyHydration WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6CB6E9F27226D8F003CDBAF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6CB6E9E27226D8F003CDBAF /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C60C2A82273147E6002CC90F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		C60C2A8627315074002CC90F /* Hydration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydration.swift; sourceTree = "<group>"; };
+		C6138CB52735168A003287C7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C65E300D273D026400AE7C22 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		C67CE7DE270474F8000AA9BD /* AlarmEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditView.swift; sourceTree = "<group>"; };
+		C6A4688027563DAE003218AE /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		C6AF2EF72701D2BD00E4A073 /* MyHydration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHydration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AF2EFA2701D2BD00E4A073 /* MyHydrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHydrationApp.swift; sourceTree = "<group>"; };
+		C6AF2EFC2701D2BD00E4A073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6AF2EFE2701D2BE00E4A073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6AF2F012701D2BE00E4A073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6AF2F032701D2BE00E4A073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6AF2F062701D2BE00E4A073 /* MyHydration WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyHydration WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AF2F0B2701D2BE00E4A073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6AF2F0D2701D2BE00E4A073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6AF2F122701D2BE00E4A073 /* MyHydration WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyHydration WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AF2F192701D2BE00E4A073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6AF2F1B2701D2BE00E4A073 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C6AF2F1D2701D2BE00E4A073 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		C6AF2F1F2701D2BE00E4A073 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		C6AF2F212701D2BE00E4A073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6AF2F242701D2BE00E4A073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6AF2F262701D2BE00E4A073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6AF2F272701D2BE00E4A073 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C6AF2F382701D5EF00E4A073 /* HydrationTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationTrackerView.swift; sourceTree = "<group>"; };
+		C6AF2F3A2701D60D00E4A073 /* HydrationActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationActivityView.swift; sourceTree = "<group>"; };
+		C6AF2F3C2701D62600E4A073 /* UserInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationView.swift; sourceTree = "<group>"; };
+		C6AF2F3E2701DCB300E4A073 /* TrackerRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerRingView.swift; sourceTree = "<group>"; };
+		C6AF2F41270204B900E4A073 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C6AF2F442702AB5F00E4A073 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		C6AF2F472702D37B00E4A073 /* AlarmRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRow.swift; sourceTree = "<group>"; };
+		C6CB6E9327226D0D003CDBAF /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		C6CB6EA2272283E4003CDBAF /* ActivityGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityGraphView.swift; sourceTree = "<group>"; };
+		C6CB6EA527228FFA003CDBAF /* BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		C6CB6EA727229F59003CDBAF /* ModuleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleListView.swift; sourceTree = "<group>"; };
+		C6DA0168270D97810047DEBE /* HydrationEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationEditView.swift; sourceTree = "<group>"; };
+		C6DA016A270EED470047DEBE /* AlarmAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAddView.swift; sourceTree = "<group>"; };
+		C6DA016C27103B140047DEBE /* DayRepeatSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRepeatSelectionView.swift; sourceTree = "<group>"; };
+		C6DA016E27202AEE0047DEBE /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C6DA017227215B340047DEBE /* UserInformationEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationEditView.swift; sourceTree = "<group>"; };
+		C6E6B45A27463BB6003604CB /* MyHydration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyHydration.entitlements; sourceTree = "<group>"; };
+		C6E6B45B27463BB6003604CB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		C6E6B45D274645AE003604CB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6AF2EF42701D2BD00E4A073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6CB6E9D27226D8F003CDBAF /* Charts.framework in Frameworks */,
+				C6E6B45C27463BB6003604CB /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6AF2F0F2701D2BE00E4A073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6AF2EEE2701D2BC00E4A073 = {
+			isa = PBXGroup;
+			children = (
+				C6AF2EF92701D2BD00E4A073 /* MyHydration */,
+				C6AF2F0A2701D2BE00E4A073 /* MyHydration WatchKit App */,
+				C6AF2F162701D2BE00E4A073 /* MyHydration WatchKit Extension */,
+				C6AF2EF82701D2BD00E4A073 /* Products */,
+				C6CB6E9C27226D8F003CDBAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6AF2EF82701D2BD00E4A073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6AF2EF72701D2BD00E4A073 /* MyHydration.app */,
+				C6AF2F062701D2BE00E4A073 /* MyHydration WatchKit App.app */,
+				C6AF2F122701D2BE00E4A073 /* MyHydration WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6AF2EF92701D2BD00E4A073 /* MyHydration */ = {
+			isa = PBXGroup;
+			children = (
+				C6E6B45A27463BB6003604CB /* MyHydration.entitlements */,
+				C6AF2F492704227900E4A073 /* Model */,
+				C6AF2F432702AB4C00E4A073 /* Extension */,
+				C6AF2F402702048400E4A073 /* Colors */,
+				C6AF2F352701D53A00E4A073 /* Views */,
+				C6AF2EFA2701D2BD00E4A073 /* MyHydrationApp.swift */,
+				C6AF2EFC2701D2BD00E4A073 /* ContentView.swift */,
+				C6AF2EFE2701D2BE00E4A073 /* Assets.xcassets */,
+				C6AF2F032701D2BE00E4A073 /* Info.plist */,
+				C6E6B45D274645AE003604CB /* Launch Screen.storyboard */,
+				C6AF2F002701D2BE00E4A073 /* Preview Content */,
+			);
+			path = MyHydration;
+			sourceTree = "<group>";
+		};
+		C6AF2F002701D2BE00E4A073 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6AF2F012701D2BE00E4A073 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6AF2F0A2701D2BE00E4A073 /* MyHydration WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C6AF2F0B2701D2BE00E4A073 /* Assets.xcassets */,
+				C6AF2F0D2701D2BE00E4A073 /* Info.plist */,
+			);
+			path = "MyHydration WatchKit App";
+			sourceTree = "<group>";
+		};
+		C6AF2F162701D2BE00E4A073 /* MyHydration WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C6AF2F192701D2BE00E4A073 /* ContentView.swift */,
+				C6AF2F1B2701D2BE00E4A073 /* NotificationController.swift */,
+				C6AF2F1D2701D2BE00E4A073 /* NotificationView.swift */,
+				C6AF2F1F2701D2BE00E4A073 /* ComplicationController.swift */,
+				C6AF2F212701D2BE00E4A073 /* Assets.xcassets */,
+				C6AF2F262701D2BE00E4A073 /* Info.plist */,
+				C6AF2F272701D2BE00E4A073 /* PushNotificationPayload.apns */,
+				C6AF2F232701D2BE00E4A073 /* Preview Content */,
+			);
+			path = "MyHydration WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C6AF2F232701D2BE00E4A073 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB6E9327226D0D003CDBAF /* Charts.xcodeproj */,
+				C6AF2F242701D2BE00E4A073 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6AF2F352701D53A00E4A073 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6AF2F382701D5EF00E4A073 /* HydrationTrackerView.swift */,
+				C6AF2F3A2701D60D00E4A073 /* HydrationActivityView.swift */,
+				C6AF2F3C2701D62600E4A073 /* UserInformationView.swift */,
+				C6AF2F3E2701DCB300E4A073 /* TrackerRingView.swift */,
+				C6AF2F472702D37B00E4A073 /* AlarmRow.swift */,
+				C67CE7DE270474F8000AA9BD /* AlarmEditView.swift */,
+				C6DA0168270D97810047DEBE /* HydrationEditView.swift */,
+				C6DA016A270EED470047DEBE /* AlarmAddView.swift */,
+				C6DA016C27103B140047DEBE /* DayRepeatSelectionView.swift */,
+				C6DA017227215B340047DEBE /* UserInformationEditView.swift */,
+				C6CB6EA2272283E4003CDBAF /* ActivityGraphView.swift */,
+				C6CB6EA727229F59003CDBAF /* ModuleListView.swift */,
+				C65E300D273D026400AE7C22 /* Test.swift */,
+				C6A4688027563DAE003218AE /* Badge.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C6AF2F402702048400E4A073 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C6AF2F41270204B900E4A073 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C6AF2F432702AB4C00E4A073 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C60C2A82273147E6002CC90F /* Notification.swift */,
+				C6CB6EA527228FFA003CDBAF /* BLE.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C6AF2F492704227900E4A073 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA016E27202AEE0047DEBE /* UserData.swift */,
+				C6AF2F442702AB5F00E4A073 /* Alarm.swift */,
+				C60C2A8627315074002CC90F /* Hydration.swift */,
+				C6138CB52735168A003287C7 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6CB6E9427226D0D003CDBAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6CB6E9927226D0D003CDBAF /* Charts.framework */,
+				C6CB6E9B27226D0D003CDBAF /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6CB6E9C27226D8F003CDBAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6E6B45B27463BB6003604CB /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6AF2EF62701D2BD00E4A073 /* MyHydration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6AF2F322701D2BE00E4A073 /* Build configuration list for PBXNativeTarget "MyHydration" */;
+			buildPhases = (
+				C6AF2EF32701D2BD00E4A073 /* Sources */,
+				C6AF2EF42701D2BD00E4A073 /* Frameworks */,
+				C6AF2EF52701D2BD00E4A073 /* Resources */,
+				C6AF2F312701D2BE00E4A073 /* Embed Watch Content */,
+				C6CB6E9F27226D8F003CDBAF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6AF2F092701D2BE00E4A073 /* PBXTargetDependency */,
+			);
+			name = MyHydration;
+			productName = MyHydration;
+			productReference = C6AF2EF72701D2BD00E4A073 /* MyHydration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6AF2F052701D2BE00E4A073 /* MyHydration WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6AF2F2E2701D2BE00E4A073 /* Build configuration list for PBXNativeTarget "MyHydration WatchKit App" */;
+			buildPhases = (
+				C6AF2F042701D2BE00E4A073 /* Resources */,
+				C6AF2F2D2701D2BE00E4A073 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6AF2F152701D2BE00E4A073 /* PBXTargetDependency */,
+			);
+			name = "MyHydration WatchKit App";
+			productName = "MyHydration WatchKit App";
+			productReference = C6AF2F062701D2BE00E4A073 /* MyHydration WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C6AF2F112701D2BE00E4A073 /* MyHydration WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6AF2F2A2701D2BE00E4A073 /* Build configuration list for PBXNativeTarget "MyHydration WatchKit Extension" */;
+			buildPhases = (
+				C6AF2F0E2701D2BE00E4A073 /* Sources */,
+				C6AF2F0F2701D2BE00E4A073 /* Frameworks */,
+				C6AF2F102701D2BE00E4A073 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyHydration WatchKit Extension";
+			productName = "MyHydration WatchKit Extension";
+			productReference = C6AF2F122701D2BE00E4A073 /* MyHydration WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6AF2EEF2701D2BC00E4A073 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C6AF2EF62701D2BD00E4A073 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C6AF2F052701D2BE00E4A073 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C6AF2F112701D2BE00E4A073 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = C6AF2EF22701D2BC00E4A073 /* Build configuration list for PBXProject "MyHydration" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ko,
+				Base,
+			);
+			mainGroup = C6AF2EEE2701D2BC00E4A073;
+			productRefGroup = C6AF2EF82701D2BD00E4A073 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C6CB6E9427226D0D003CDBAF /* Products */;
+					ProjectRef = C6CB6E9327226D0D003CDBAF /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C6AF2EF62701D2BD00E4A073 /* MyHydration */,
+				C6AF2F052701D2BE00E4A073 /* MyHydration WatchKit App */,
+				C6AF2F112701D2BE00E4A073 /* MyHydration WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C6CB6E9927226D0D003CDBAF /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = C6CB6E9827226D0D003CDBAF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C6CB6E9B27226D0D003CDBAF /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = C6CB6E9A27226D0D003CDBAF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6AF2EF52701D2BD00E4A073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E6B45E274645AE003604CB /* Launch Screen.storyboard in Resources */,
+				C6AF2F022701D2BE00E4A073 /* Preview Assets.xcassets in Resources */,
+				C6AF2EFF2701D2BE00E4A073 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6AF2F042701D2BE00E4A073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AF2F0C2701D2BE00E4A073 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6AF2F102701D2BE00E4A073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AF2F252701D2BE00E4A073 /* Preview Assets.xcassets in Resources */,
+				C6AF2F222701D2BE00E4A073 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6AF2EF32701D2BD00E4A073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67CE7DF270474F8000AA9BD /* AlarmEditView.swift in Sources */,
+				C6DA016B270EED470047DEBE /* AlarmAddView.swift in Sources */,
+				C6AF2F482702D37B00E4A073 /* AlarmRow.swift in Sources */,
+				C6A4688127563DAE003218AE /* Badge.swift in Sources */,
+				C6DA016F27202AF00047DEBE /* UserData.swift in Sources */,
+				C6DA0169270D97810047DEBE /* HydrationEditView.swift in Sources */,
+				C65E300E273D026400AE7C22 /* Test.swift in Sources */,
+				C6AF2F3B2701D60D00E4A073 /* HydrationActivityView.swift in Sources */,
+				C6AF2EFD2701D2BD00E4A073 /* ContentView.swift in Sources */,
+				C6CB6EA627228FFA003CDBAF /* BLE.swift in Sources */,
+				C60C2A8727315074002CC90F /* Hydration.swift in Sources */,
+				C6CB6EA827229F59003CDBAF /* ModuleListView.swift in Sources */,
+				C6138CB62735168A003287C7 /* DataManager.swift in Sources */,
+				C6AF2F392701D5EF00E4A073 /* HydrationTrackerView.swift in Sources */,
+				C60C2A83273147E6002CC90F /* Notification.swift in Sources */,
+				C6CB6EA3272283E4003CDBAF /* ActivityGraphView.swift in Sources */,
+				C6AF2F452702AB5F00E4A073 /* Alarm.swift in Sources */,
+				C6AF2F42270204B900E4A073 /* Colors.swift in Sources */,
+				C6AF2F3D2701D62600E4A073 /* UserInformationView.swift in Sources */,
+				C6AF2EFB2701D2BD00E4A073 /* MyHydrationApp.swift in Sources */,
+				C6AF2F3F2701DCB300E4A073 /* TrackerRingView.swift in Sources */,
+				C6DA017327215B340047DEBE /* UserInformationEditView.swift in Sources */,
+				C6DA016D27103B140047DEBE /* DayRepeatSelectionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6AF2F0E2701D2BE00E4A073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AF2F1C2701D2BE00E4A073 /* NotificationController.swift in Sources */,
+				C6E6B4662754F848003604CB /* Alarm.swift in Sources */,
+				C6E6B4622754F848003604CB /* DataManager.swift in Sources */,
+				C6E6B4682754F848003604CB /* UserData.swift in Sources */,
+				C6E6B4672754F848003604CB /* BLE.swift in Sources */,
+				C6E6B46A2754F848003604CB /* Notification.swift in Sources */,
+				C6A4687E2754FA18003218AE /* MyHydrationApp.swift in Sources */,
+				C6E6B4652754F848003604CB /* Hydration.swift in Sources */,
+				C6AF2F1A2701D2BE00E4A073 /* ContentView.swift in Sources */,
+				C6AF2F202701D2BE00E4A073 /* ComplicationController.swift in Sources */,
+				C6AF2F1E2701D2BE00E4A073 /* NotificationView.swift in Sources */,
+				C6A4687F2754FAC7003218AE /* TrackerRingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6AF2F092701D2BE00E4A073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6AF2F052701D2BE00E4A073 /* MyHydration WatchKit App */;
+			targetProxy = C6AF2F082701D2BE00E4A073 /* PBXContainerItemProxy */;
+		};
+		C6AF2F152701D2BE00E4A073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6AF2F112701D2BE00E4A073 /* MyHydration WatchKit Extension */;
+			targetProxy = C6AF2F142701D2BE00E4A073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C6AF2F282701D2BE00E4A073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6AF2F292701D2BE00E4A073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C6AF2F2B2701D2BE00E4A073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyHydration WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X2AL6XP45V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MyHydration WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RTES.MyHydration.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C6AF2F2C2701D2BE00E4A073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyHydration WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X2AL6XP45V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MyHydration WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RTES.MyHydration.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C6AF2F2F2701D2BE00E4A073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2AL6XP45V;
+				IBSC_MODULE = MyHydration_WatchKit_Extension;
+				INFOPLIST_FILE = "MyHydration WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RTES.MyHydration.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		C6AF2F302701D2BE00E4A073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2AL6XP45V;
+				IBSC_MODULE = MyHydration_WatchKit_Extension;
+				INFOPLIST_FILE = "MyHydration WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RTES.MyHydration.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		C6AF2F332701D2BE00E4A073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyHydration/MyHydration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyHydration/Preview Content\"";
+				DEVELOPMENT_TEAM = X2AL6XP45V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyHydration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RTES.MyHydration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6AF2F342701D2BE00E4A073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyHydration/MyHydration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MyHydration/Preview Content\"";
+				DEVELOPMENT_TEAM = X2AL6XP45V;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MyHydration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RTES.MyHydration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6AF2EF22701D2BC00E4A073 /* Build configuration list for PBXProject "MyHydration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6AF2F282701D2BE00E4A073 /* Debug */,
+				C6AF2F292701D2BE00E4A073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6AF2F2A2701D2BE00E4A073 /* Build configuration list for PBXNativeTarget "MyHydration WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6AF2F2B2701D2BE00E4A073 /* Debug */,
+				C6AF2F2C2701D2BE00E4A073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6AF2F2E2701D2BE00E4A073 /* Build configuration list for PBXNativeTarget "MyHydration WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6AF2F2F2701D2BE00E4A073 /* Debug */,
+				C6AF2F302701D2BE00E4A073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6AF2F322701D2BE00E4A073 /* Build configuration list for PBXNativeTarget "MyHydration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6AF2F332701D2BE00E4A073 /* Debug */,
+				C6AF2F342701D2BE00E4A073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6AF2EEF2701D2BC00E4A073 /* Project object */;
+}
